@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Page1</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="https://www.caldwell.edu/admissions/apply-now/" target="_blank">Apply</a></li>
+                <li><a href="https://caldwelluniv.my.salesforce-sites.com/events#/calendar" target="_blank">Visit</a></li>
+            </ul>
+        </nav>
+        <h1>Student Survey Form</h1>
+        <img src="images/logo_cu.png" alt="Caldwell University Logo" width="200"><br><br>
+        <h2>Caldwell University</h2>
+        <h2>Fill out the form below:</h2>
+        <form action="page2.html" method="get">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="0" required><br><br>
+
+            <label for="major">Major:</label><br>
+            <input type="text" id="major" name="major" required><br><br>
+
+            <label for="year">Year:</label><br>
+            <select id="year" name="year" required>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" class="inline-label">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female" class="inline-label">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other" class="inline-label">Other</label><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="interests">Interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports" class="inline-label">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music" class="inline-label">Music</label>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading" class="inline-label">Reading</label><br><br>
+            <label for="course">Favorite Course:</label><br>
+            <input type="text" id="course" name="course" required><br><br>
+
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <label for="satisfaction">Overall Satisfaction:</label><br>
+            <select id="satisfaction" name="satisfaction" required>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+                </select>
+
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <p>Campus Map</p>
+        <img src="images/map.png" alt="Campus Map" width="400"><br><br>
+        
+        <div class="toggle-container">
+        <span>Dark Mode</span>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        </div>
+
+
+        
+        
+
+    </body>
+</html>
