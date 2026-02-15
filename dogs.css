@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3b82f6;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+.image-container {
+    margin-top: 30px;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#dog-image {
+    max-width: 400px;
+    border-radius: 8px;
+    display: none;
+}
+
+#error-msg {
+    color: #dc2626;
+    margin-top: 15px;
+    font-weight: bold;
+    display: none;
+}
